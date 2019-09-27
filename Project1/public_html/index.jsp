@@ -64,11 +64,18 @@
             </p>
             <INPUT TYPE="SUBMIT" NAME="MetaspaceOOM" VALUE="submit">
             </p>
-        </FORM>        
+        </FORM>
+        <FORM NAME="data" METHOD="POST" Action="/testapp-all/stuck">
+            </p>
+            Test locale and TimeZone<br/>
+            </p>
+            <INPUT TYPE="SUBMIT" NAME="testlocale" VALUE="submit">
+            </p>
+        </FORM>            
 	</br>
 	</br>
 	<h3><font color=maroon><a href="testauth">Access Protected Resource</a></font></h3>
-
+        <h3> Float is <i> <% float val =  2.001f;System.out.printf("%.2f", val); %> </i> you have been successfully configured Single Sign-On with Microsfot Clients and WebLogic Server. </h3>
     </table>
 </body>
 </html>

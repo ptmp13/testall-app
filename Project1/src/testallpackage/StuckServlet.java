@@ -18,6 +18,10 @@ import java.sql.CallableStatement;
 
 import java.sql.Types;
 
+import java.text.DecimalFormat;
+
+import java.text.DecimalFormatSymbols;
+
 import java.util.Date;
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
@@ -346,6 +350,19 @@ public class StuckServlet extends HttpServlet {
             System.out.println(clas.getName());
         }
     }
+    
+    // Print float
+    protected void testlocale(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        DecimalFormat format=new DecimalFormat();
+        DecimalFormatSymbols symbols=format.getDecimalFormatSymbols();
+        char sep=symbols.getDecimalSeparator();
+        PrintWriter out = response.getWriter();
+        response.setContentType("text/html");
+        out.print("<h2>Separator: !" + sep + "!</h2>");
+        float myFloat = 2.001f;
+        String formattedString = String.format("%.02f", myFloat); 
+        System.out.printf("%.2f", myFloat);
+    }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -395,6 +412,15 @@ public class StuckServlet extends HttpServlet {
         if (request.getParameter("executeProcWithReturn") != null) {
             System.out.println("doPost executeProcWithReturn IF");
             executeProcWithReturn(request, response);
+        }
+        if (request.getParameter("testlocale") != null) {
+            System.out.println("doPost testlocale IF");
+            try {
+                testlocale(request, response);
+            }
+            catch (Exception e) {
+                e.printStackTrace();
+            }            
         }        
         if (request.getParameter("MetaspaceOOM") != null) {
             System.out.println("doPost MetaspaceOOM IF");
