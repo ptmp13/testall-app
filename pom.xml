@@ -17,7 +17,7 @@
     </resources>
   </build>
   <modules>
-    <module>Project1</module>
+    <module>testall</module>
   </modules>
   <dependencies>
     <dependency>
