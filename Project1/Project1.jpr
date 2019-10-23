@@ -81,6 +81,7 @@
          <string v="EJB"/>
          <string v="JSP"/>
          <string v="Java"/>
+         <string v="Maven"/>
          <string v="TopLink"/>
          <string v="XML"/>
       </list>
@@ -181,6 +182,9 @@
       <list n="profileList">
          <string v="testall"/>
       </list>
+   </hash>
+   <hash n="oracle.jdeveloper.maven.compiler.MavenConfiguration">
+      <url n="pomfileURL" path="pom.xml"/>
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
       <value n="j2eeWebAppName" v="testall-app-Project1-webapp"/>
