@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0">
     <modelVersion>4.0.0</modelVersion>
     <groupId>testall-app</groupId>
-    <artifactId>Project1</artifactId>
+    <artifactId>testall</artifactId>
     <version>1.0-SNAPSHOT</version>
     <description>Generated POM from JDeveloper for project Project1</description>
     <packaging>war</packaging>
