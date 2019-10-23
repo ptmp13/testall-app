@@ -22,7 +22,14 @@ import java.text.DecimalFormat;
 
 import java.text.DecimalFormatSymbols;
 
+import java.text.NumberFormat;
+
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+import java.util.Locale;
+import java.util.TimeZone;
+
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -359,9 +366,54 @@ public class StuckServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         response.setContentType("text/html");
         out.print("<h2>Separator: !" + sep + "!</h2>");
+
+        Locale currentLocale = request.getLocale();
+        out.print(currentLocale.getDisplayLanguage()+"<p/>");
+        out.print(currentLocale.getDisplayCountry()+"<p/>");
+         
+        out.print(currentLocale.getLanguage()+"<p/>");
+        out.print(currentLocale.getCountry()+"<p/>");
+        
+        Locale englishLocale = new Locale("en", "US");
+        Locale.setDefault(englishLocale);
+        out.print("Default locale:" + Locale.getDefault().toString()+"<p/>");
+        out.print(formattedDoubleTest());
+
+        /*out.print("Setting default locale to swedish_sweden<p/>");
+        Locale swedishLocale = new Locale("sv", "SE");
+        Locale.setDefault(swedishLocale);
+
+        out.print("New default locale:" + Locale.getDefault().toString()+"<p/>");
+        out.print(formattedDoubleTest());  */
+        
         float myFloat = 2.001f;
         String formattedString = String.format("%.02f", myFloat); 
         System.out.printf("%.2f", myFloat);
+        String[] timeZones = TimeZone.getAvailableIDs();
+        List<String> tzList = new ArrayList<String>();
+        for (String timeZone : timeZones)
+        {
+          TimeZone tz = TimeZone.getTimeZone(timeZone);
+          StringBuilder timeZoneStr = new StringBuilder();
+          timeZoneStr.append("( GMT ").append(tz.getRawOffset() / (60 * 60 * 1000)).append(" ) ").append(tz.getDisplayName()).append("(").append(timeZone).append(")");
+          tzList.add(timeZoneStr.toString());
+          out.print(timeZoneStr.toString()+"<p/>");
+        }
+         TimeZone tz = TimeZone.getTimeZone(java.util.TimeZone.getDefault().getID());
+         StringBuilder timeZoneStr = new StringBuilder();
+         timeZoneStr.append("Current timzone: ").append("( GMT ").append(tz.getRawOffset() / (60 * 60 * 1000)).append(" ) ").append(tz.getDisplayName());
+         tzList.add(timeZoneStr.toString());
+         out.print(timeZoneStr.toString()+"<p/>");
+    }
+    
+    public static String formattedDoubleTest() {
+            double doub = 1234567.89;
+            Locale defaultLocale = Locale.getDefault();
+            NumberFormat numberFormat = NumberFormat.getInstance(defaultLocale);
+            String formattedNum = numberFormat.format(doub);
+            String doubstring=doub + " formatted (" + defaultLocale.toString() + "):" + formattedNum;
+            //System.out.println(doub + " formatted (" + defaultLocale.toString() + "):" + formattedNum);
+            return doubstring;
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
