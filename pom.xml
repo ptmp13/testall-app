@@ -15,7 +15,6 @@
         </includes>
       </resource>
     </resources>
-    <finalName>testall-app</finalName>
   </build>
   <modules>
     <module>Project1</module>
