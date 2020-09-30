@@ -71,7 +71,21 @@
             </p>
             <INPUT TYPE="SUBMIT" NAME="testlocale" VALUE="submit">
             </p>
-        </FORM>            
+        </FORM>
+        <FORM NAME="data" METHOD="POST" Action="/testapp-all/stuck">
+            </p>
+            connect with SSL URL: <INPUT TYPE="TEXT" NAME="sslurl" VALUE="https://google.com"><br/>
+            </p>
+            <INPUT TYPE="SUBMIT" NAME="testssl" VALUE="submit">
+            </p>
+        </FORM>
+        <FORM NAME="data" METHOD="GET" Action="/testapp-all/stuck">
+            </p>
+            Time sleep before return data for check WLIOTimeoutSecs: <INPUT TYPE="TEXT" NAME="sleeptime" VALUE="700"><br/>
+            </p>
+            <INPUT TYPE="SUBMIT" NAME="testsleepresp" VALUE="submit">
+            </p>
+        </FORM>
 	</br>
 	</br>
 	<h3><font color=maroon><a href="testauth">Access Protected Resource</a></font></h3>

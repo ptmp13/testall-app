@@ -1,0 +1,29 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="testall:war exploded">
+    <output-path>$PROJECT_DIR$/Project1/public_html</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>testall</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="testall" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax:javaee-api:8.0.1" />
+          <element id="library" level="project" name="Maven: com.sun.mail:javax.mail:1.6.2" />
+          <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
+          <element id="library" level="project" name="Maven: org.javassist:javassist:3.26.0-GA" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/Project1/public_html/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="testall/web/Web" />
+    </root>
+  </artifact>
+</component>

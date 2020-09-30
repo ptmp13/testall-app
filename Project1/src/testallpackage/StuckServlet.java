@@ -1,5 +1,7 @@
 package testallpackage;
 
+import java.io.BufferedReader;
+
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
@@ -12,7 +14,14 @@ import java.sql.Statement;
 import java.sql.PreparedStatement;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
+
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
+import java.net.URL;
 
 import java.sql.CallableStatement;
 
@@ -26,8 +35,10 @@ import java.text.NumberFormat;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 import java.util.TimeZone;
 
 import javax.ejb.EJB;
@@ -40,6 +51,8 @@ import javax.servlet.http.HttpSession;
 
 import javax.sql.DataSource;
 import javassist.ClassPool;
+
+//import javax.net.ssl.HttpsURLConnection;
 
 /**
  *
@@ -109,7 +122,10 @@ public class StuckServlet extends HttpServlet {
 		String dsName = request.getParameter("nameDataSource");
 		try{
 			ctx = new InitialContext();
-			DataSource ds = (DataSource) ctx.lookup(dsName);
+			// FOR DATASOURCE FROM WEBLOGIC.XML
+            DataSource ds = (DataSource) ctx.lookup("java:comp/env/myMarsDataSource");
+            // FOR VARIABLES (JNDI NAME)
+			//DataSource ds = (DataSource) ctx.lookup(dsName);
 			
 			con = ds.getConnection();
 			stmt = con.createStatement();
@@ -349,14 +365,36 @@ public class StuckServlet extends HttpServlet {
         StringBuilder s = new StringBuilder();
         System.out.println("Start while!....");
         int i=0;
+        int sleeptime = 100;
         while (true) {
+            System.out.println("Start sleep!....");
+            Thread.sleep(sleeptime*1000);
+            System.out.println("End sleep!....");
             i++;
             Class clas = classPool.makeClass(
-                         i + " outofmemory.OutOfMemoryErrorMetaspace ").toClass();
+                         i + "outofmemory.OutOfMemoryErrorMetaspace ").toClass();
             //Print name of class loaded
-            System.out.println(clas.getName());
+            System.out.println("Classname: " + clas.getName());
+            System.out.println("Hashcode: " + clas.hashCode());
+            System.out.println("ClassLoader: " + clas.getClassLoader());
+            System.out.println("getSuperclass: " + clas.getSuperclass());
+            System.out.println("getClass: " + clas.getClass());
+            System.out.println("getCanonicalName: " + clas.getCanonicalName());
+            System.out.println("getClasses: " + clas.getClasses());
+            System.out.println("getDeclaringClass: " + clas.getDeclaringClass());
+            System.out.println("getConstructors: " + clas.getConstructors());
         }
     }
+    
+    protected void sleepResponse(HttpServletRequest request, HttpServletResponse response) throws Exception {    
+        StringBuilder s = new StringBuilder();
+        PrintWriter out = response.getWriter();
+        int sleeptime = Integer.parseInt(request.getParameter("sleeptime"));
+        response.setContentType("text/html");
+        out.println("Start sleep!....");
+        Thread.sleep(sleeptime*1000);
+        out.println("End sleep!....");
+    }    
     
     // Print float
     protected void testlocale(HttpServletRequest request, HttpServletResponse response) throws Exception {
@@ -415,6 +453,37 @@ public class StuckServlet extends HttpServlet {
             //System.out.println(doub + " formatted (" + defaultLocale.toString() + "):" + formattedNum);
             return doubstring;
     }
+    
+    public void testssl(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        System.out.println("Start ssl!....");
+        PrintWriter out = response.getWriter();        
+        out.print("==========================");
+        try {
+            String httpsURL = request.getParameter("sslurl");
+            
+            //String httpsURL = "https://your.https.url.here/";
+            URL myUrl = new URL(httpsURL);
+            HttpURLConnection conn = (HttpURLConnection)myUrl.openConnection();
+            conn.setRequestProperty("Content-Type", "application/json;charset=utf-8");
+            conn.setRequestProperty("Authorization", "Basic aW50ZWdyYXRpb25fbWtzOjd0Zno1Y2MzNXo=");
+            conn.setRequestMethod("GET");
+            InputStream is = conn.getInputStream();
+            InputStreamReader isr = new InputStreamReader(is);
+            BufferedReader br = new BufferedReader(isr);
+    
+            String inputLine;
+            
+            
+            while ((inputLine = br.readLine()) != null) {
+                out.print(inputLine);
+            }
+
+            br.close();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        } 
+    } 
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -429,8 +498,16 @@ public class StuckServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-	    System.out.println("doGet go");
-        processRequest(request, response);
+        if (request.getParameter("testsleepresp") != null) {
+            System.out.println("doGet testsleepresp IF");
+            try {
+                sleepResponse(request, response);
+            }
+            catch (Exception e) {
+                e.printStackTrace();
+            }            
+        }            
+        //processRequest(request, response);
     }
 
     /**
@@ -450,7 +527,7 @@ public class StuckServlet extends HttpServlet {
             processRequest(request, response);
         } 
 	if (request.getParameter("TestDS") != null) {
-	    System.out.println("doPost second IF");
+	    System.out.println("doPost second IF!!!");
             testDS(request, response);
         }
 	if (request.getParameter("insertTestTable") != null) {
@@ -465,6 +542,10 @@ public class StuckServlet extends HttpServlet {
             System.out.println("doPost executeProcWithReturn IF");
             executeProcWithReturn(request, response);
         }
+        if (request.getParameter("testssl") != null) {
+            System.out.println("doPost testssl IF");   
+            testssl(request, response);
+        }        
         if (request.getParameter("testlocale") != null) {
             System.out.println("doPost testlocale IF");
             try {
@@ -483,6 +564,15 @@ public class StuckServlet extends HttpServlet {
                 e.printStackTrace();
             }
         }
+        if (request.getParameter("testsleepresp") != null) {
+            System.out.println("doPost testsleepresp IF");
+            try {
+                sleepResponse(request, response);
+            }
+            catch (Exception e) {
+                e.printStackTrace();
+            }            
+        }        
 	/* else if (request.getParameter("button3") != null) {
             myClass.method3();
         } else {
