@@ -86,6 +86,13 @@
             <INPUT TYPE="SUBMIT" NAME="testsleepresp" VALUE="submit">
             </p>
         </FORM>
+        <FORM NAME="data" METHOD="GET" Action="/testapp-all/stuck">
+            </p>
+            Write to File path: <INPUT TYPE="TEXT" NAME="pathtofile" VALUE="700"><br/>
+            </p>
+            <INPUT TYPE="SUBMIT" NAME="writeToFile" VALUE="submit">
+            </p>
+        </FORM>
 	</br>
 	</br>
 	<h3><font color=maroon><a href="testauth">Access Protected Resource</a></font></h3>

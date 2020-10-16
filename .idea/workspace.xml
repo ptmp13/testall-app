@@ -2,37 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68e80468-9fc6-4f52-bf09-57215f371625" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/testall_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/testall_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_javaee_api_8_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_26_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project1/public_html/marsDS-jdbc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project1/testall.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testall-app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.data/00000000/0000000a.jdb" beforeDir="false" afterPath="$PROJECT_DIR$/.data/00000000/0000000a.jdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.data/Project1/00000000/0000000d.jdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.data/Project1/00000000/00000012.jdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.data/Project1/00000000/00000013.jdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1/Project1.jpr" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/Project1.jpr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1/classes/.data/Project1.cdi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1/classes/.wlsjsps/jsp_servlet/__failedlogin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1/classes/.wlsjsps/jsp_servlet/__index.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1/classes/.wlsjsps/jsp_servlet/__login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1/classes/.wlsjsps/jsp_servlet/__logout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1/classes/testallpackage/LongRunningEJB.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/classes/testallpackage/LongRunningEJB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project1/classes/testallpackage/StuckServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/classes/testallpackage/StuckServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1/classes/testallpackage/testauth.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/classes/testallpackage/testauth.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1/deploy/testall.war" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/deploy/testall.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1/public_html/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/public_html/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1/public_html/WEB-INF/weblogic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/public_html/WEB-INF/weblogic.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1/public_html/WEB-INF/classes/testallpackage/StuckServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/public_html/WEB-INF/classes/testallpackage/StuckServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project1/public_html/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/public_html/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project1/src/testallpackage/StuckServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/src/testallpackage/StuckServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1/target/testapp-all.war" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/target/testapp-all.war" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Project1/classes/" />
     <ignored path="$PROJECT_DIR$/Project1/target/" />
@@ -48,10 +24,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project1/src/testallpackage/StuckServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="133" column="12" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="12" />
+            <state relative-caret-position="9416">
+              <caret line="474" column="44" selection-start-line="474" selection-start-column="35" selection-end-line="474" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#23274#23275#0" expanded="true" />
+                <element signature="e#23316#23317#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,8 +38,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project1/public_html/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
+            <state relative-caret-position="1012">
               <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Project1/public_html/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -75,7 +62,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project1/public_html/WEB-INF/weblogic.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="440">
@@ -91,6 +78,7 @@
       <find>scope</find>
       <find>dsName</find>
       <find>sleep</find>
+      <find>testssl</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -103,6 +91,7 @@
         <option value="$PROJECT_DIR$/Project1/marsDS-jdbc.xml" />
         <option value="$PROJECT_DIR$/Project1/public_html/WEB-INF/weblogic.xml" />
         <option value="$PROJECT_DIR$/Project1/public_html/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/Project1/public_html/index.jsp" />
         <option value="$PROJECT_DIR$/Project1/src/testallpackage/StuckServlet.java" />
       </list>
     </option>
@@ -133,8 +122,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="80" />
+    <option name="x" value="155" />
+    <option name="y" value="71" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -184,12 +173,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="testallpackage" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="testall-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testall-app" type="462c0819:PsiDirectoryNode" />
-              <item name="Project1" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -199,8 +182,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1600264802491" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Application1" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1601998389272" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../testoam" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -238,17 +221,22 @@
       <workItem from="1599631989405" duration="51000" />
       <workItem from="1599845620417" duration="5308000" />
       <workItem from="1600439476110" duration="1220000" />
+      <workItem from="1601560334585" duration="599000" />
+      <workItem from="1601889859040" duration="1052000" />
+      <workItem from="1602598282295" duration="234000" />
+      <workItem from="1602611642632" duration="1226000" />
+      <workItem from="1602848548637" duration="8000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19451000" />
+    <option name="totallyTimeSpent" value="22570000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1609808" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16897655" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -298,13 +286,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Project1/src/testallpackage/testauth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Project1/src/testallpackage/StuckServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="133" column="12" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="12" />
+        <state relative-caret-position="9416">
+          <caret line="474" column="44" selection-start-line="474" selection-start-column="35" selection-end-line="474" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#23274#23275#0" expanded="true" />
+            <element signature="e#23316#23317#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project1/public_html/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1012">
+          <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -315,17 +319,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project1/public_html/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Project1/public_html/WEB-INF/weblogic.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="20" column="38" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project1/public_html/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
         </state>
       </provider>
     </entry>

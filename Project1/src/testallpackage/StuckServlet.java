@@ -1,12 +1,10 @@
 package testallpackage;
 
-import java.io.BufferedReader;
+import java.io.*;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
-import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -14,8 +12,6 @@ import java.sql.Statement;
 import java.sql.PreparedStatement;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.PrintWriter;
 
 import java.net.HttpURLConnection;
@@ -453,7 +449,27 @@ public class StuckServlet extends HttpServlet {
             //System.out.println(doub + " formatted (" + defaultLocale.toString() + "):" + formattedNum);
             return doubstring;
     }
-    
+
+    public static void writeToFile(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        try {
+            String pathtofile = request.getParameter("pathtofile");
+            File fout = new File(pathtofile);
+            FileOutputStream fos = new FileOutputStream(fout);
+
+            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(fos));
+
+            for (int i = 0; i < 10; i++) {
+                bw.write("something");
+                bw.newLine();
+            }
+
+            bw.close();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
     public void testssl(HttpServletRequest request, HttpServletResponse response) throws IOException {
         System.out.println("Start ssl!....");
         PrintWriter out = response.getWriter();        
@@ -545,7 +561,11 @@ public class StuckServlet extends HttpServlet {
         if (request.getParameter("testssl") != null) {
             System.out.println("doPost testssl IF");   
             testssl(request, response);
-        }        
+        }
+        if (request.getParameter("writeToFile") != null) {
+            System.out.println("doPost writeToFile IF");
+            writeToFile(request, response);
+        }
         if (request.getParameter("testlocale") != null) {
             System.out.println("doPost testlocale IF");
             try {
