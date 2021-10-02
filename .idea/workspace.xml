@@ -7,19 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68e80468-9fc6-4f52-bf09-57215f371625" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1/classes/marsDS-jdbc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1/classes/testallpackage/StuckServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/classes/testallpackage/StuckServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1/public_html/WEB-INF/classes/testallpackage/StuckServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/public_html/WEB-INF/classes/testallpackage/StuckServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1/public_html/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/public_html/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1/public_html/failedlogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/public_html/failedlogin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1/public_html/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/public_html/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1/src/testallpackage/StuckServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/src/testallpackage/StuckServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project1/target/testapp-all.war" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/target/testapp-all.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Project1/classes/" />
     <ignored path="$PROJECT_DIR$/Project1/target/" />
@@ -64,8 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="74" lean-forward="true" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
+            <state relative-caret-position="607">
+              <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -210,7 +198,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1633180284270" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1633181908074" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -270,12 +258,12 @@
       <workItem from="1625759147713" duration="25000" />
       <workItem from="1628061937510" duration="3090000" />
       <workItem from="1628065057982" duration="2846000" />
-      <workItem from="1633165213863" duration="755000" />
+      <workItem from="1633165213863" duration="1637000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47210000" />
+    <option name="totallyTimeSpent" value="48092000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -414,8 +402,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="74" lean-forward="true" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
+        <state relative-caret-position="607">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
         </state>
       </provider>
     </entry>
