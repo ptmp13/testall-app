@@ -23,7 +23,7 @@
     </security-constraint>
     <login-config>
         <auth-method>FORM</auth-method>
-        <realm-name>myrealm</realm-name>
+        <realm-name>ovd_realm</realm-name>
         <form-login-config>
             <form-login-page>/login.jsp</form-login-page>
             <form-error-page>/failedlogin.jsp</form-error-page>
@@ -49,4 +49,5 @@
         <res-auth>Container</res-auth>
         <res-sharing-scope>Shareable</res-sharing-scope>
     </resource-ref>
+
 </web-app>

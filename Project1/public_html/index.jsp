@@ -86,9 +86,9 @@
             <INPUT TYPE="SUBMIT" NAME="testsleepresp" VALUE="submit">
             </p>
         </FORM>
-        <FORM NAME="data" METHOD="GET" Action="/testapp-all/stuck">
+        <FORM NAME="data" METHOD="POST" Action="/testapp-all/stuck">
             </p>
-            Write to File path: <INPUT TYPE="TEXT" NAME="pathtofile" VALUE="700"><br/>
+            Write to File path: <INPUT TYPE="TEXT" NAME="pathtofile" VALUE="/tmp/azazaz.txt"><br/>
             </p>
             <INPUT TYPE="SUBMIT" NAME="writeToFile" VALUE="submit">
             </p>

@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="testall:war" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="68e80468-9fc6-4f52-bf09-57215f371625" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1/classes/marsDS-jdbc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Project1/classes/testallpackage/StuckServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/classes/testallpackage/StuckServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project1/public_html/WEB-INF/classes/testallpackage/StuckServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/public_html/WEB-INF/classes/testallpackage/StuckServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1/public_html/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/public_html/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1/public_html/failedlogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/public_html/failedlogin.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project1/public_html/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/public_html/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project1/src/testallpackage/StuckServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/src/testallpackage/StuckServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project1/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project1/target/testapp-all.war" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/target/testapp-all.war" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Project1/classes/" />
@@ -19,18 +30,42 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="testall-app" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project1/src/testallpackage/StuckServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9416">
-              <caret line="474" column="44" selection-start-line="474" selection-start-column="35" selection-end-line="474" selection-end-column="44" />
+            <state relative-caret-position="286">
+              <caret line="565" column="9" lean-forward="true" selection-start-line="565" selection-start-column="9" selection-end-line="565" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#23274#23275#0" expanded="true" />
-                <element signature="e#23316#23317#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project1/public_html/failedlogin.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project1/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="21" column="74" lean-forward="true" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -38,17 +73,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project1/public_html/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1012">
-              <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+            <state relative-caret-position="638">
+              <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project1/public_html/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            <state relative-caret-position="541">
+              <caret line="88" column="38" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -65,8 +100,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project1/public_html/WEB-INF/weblogic.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="38" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="38" />
+            <state relative-caret-position="44">
+              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project1/public_html/META-INF/MANIFEST.MF">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -78,7 +131,11 @@
       <find>scope</find>
       <find>dsName</find>
       <find>sleep</find>
+      <find>ssl</find>
+      <find>webxml</find>
       <find>testssl</find>
+      <find>2.00</find>
+      <find>writeToFile</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -90,9 +147,11 @@
         <option value="$PROJECT_DIR$/Project1/public_html/WEB-INF/weblogic-application.xml" />
         <option value="$PROJECT_DIR$/Project1/marsDS-jdbc.xml" />
         <option value="$PROJECT_DIR$/Project1/public_html/WEB-INF/weblogic.xml" />
+        <option value="$PROJECT_DIR$/Project1/public_html/failedlogin.jsp" />
         <option value="$PROJECT_DIR$/Project1/public_html/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/Project1/public_html/index.jsp" />
         <option value="$PROJECT_DIR$/Project1/src/testallpackage/StuckServlet.java" />
+        <option value="$PROJECT_DIR$/Project1/public_html/index.jsp" />
+        <option value="$PROJECT_DIR$/.gitlab-ci.yml" />
       </list>
     </option>
   </component>
@@ -122,8 +181,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="155" />
-    <option name="y" value="71" />
+    <option name="x" value="260" />
+    <option name="y" value="80" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -133,7 +192,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -142,50 +200,23 @@
               <item name="testall-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="testall-app" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="testall-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testall-app" type="462c0819:PsiDirectoryNode" />
-              <item name="Project1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testall-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testall-app" type="462c0819:PsiDirectoryNode" />
-              <item name="Project1" type="462c0819:PsiDirectoryNode" />
-              <item name="public_html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testall-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testall-app" type="462c0819:PsiDirectoryNode" />
-              <item name="Project1" type="462c0819:PsiDirectoryNode" />
-              <item name="public_html" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testall-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testall-app" type="462c0819:PsiDirectoryNode" />
-              <item name="Project1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testall-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testall-app" type="462c0819:PsiDirectoryNode" />
-              <item name="Project1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="testallpackage" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1601998389272" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../testoam" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1633180284270" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -226,38 +257,61 @@
       <workItem from="1602598282295" duration="234000" />
       <workItem from="1602611642632" duration="1226000" />
       <workItem from="1602848548637" duration="8000" />
+      <workItem from="1603455223858" duration="2796000" />
+      <workItem from="1604485973984" duration="5218000" />
+      <workItem from="1605534344732" duration="12000" />
+      <workItem from="1608907332888" duration="2843000" />
+      <workItem from="1608919982417" duration="89000" />
+      <workItem from="1611069619577" duration="620000" />
+      <workItem from="1611836435040" duration="599000" />
+      <workItem from="1619690941613" duration="3445000" />
+      <workItem from="1624097766138" duration="1300000" />
+      <workItem from="1625388457770" duration="1002000" />
+      <workItem from="1625759147713" duration="25000" />
+      <workItem from="1628061937510" duration="3090000" />
+      <workItem from="1628065057982" duration="2846000" />
+      <workItem from="1633165213863" duration="755000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22570000" />
+    <option name="totallyTimeSpent" value="47210000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16897655" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.78969955" visible="true" weight="0.17697228" />
+      <window_info id="Structure" order="1" sideWeight="0.5007153" side_tool="true" weight="0.17537314" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.5007153" side_tool="true" weight="0.17537314" />
+      <window_info id="Web" order="7" sideWeight="0.21030043" side_tool="true" visible="true" weight="0.17697228" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32981783" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32981783" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32981783" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32981783" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32981783" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32981783" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32981783" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32981783" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -293,22 +347,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project1/src/testallpackage/StuckServlet.java">
+    <entry file="file://$PROJECT_DIR$/Project1/servers/null/tmp/README.TXT">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project1/public_html/failedlogin.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9416">
-          <caret line="474" column="44" selection-start-line="474" selection-start-column="35" selection-end-line="474" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#23274#23275#0" expanded="true" />
-            <element signature="e#23316#23317#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="154">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project1/public_html/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+        <state relative-caret-position="638">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -321,17 +373,129 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project1/public_html/WEB-INF/weblogic.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="38" />
+        <state relative-caret-position="44">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project1/public_html/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project1/public_html/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        <state relative-caret-position="541">
+          <caret line="88" column="38" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Project1/src/testallpackage/StuckServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="565" column="9" lean-forward="true" selection-start-line="565" selection-start-column="9" selection-end-line="565" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project1/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="74" lean-forward="true" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>testall:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>testall</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.sun.mail:javax.mail:1.6.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
