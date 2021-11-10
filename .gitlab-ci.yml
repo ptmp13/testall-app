@@ -6,6 +6,7 @@ build-job:
 test-job1:
   stage: test
   script:
+    - sleep 10
     - echo "This job tests something"
 
 test-job2:
