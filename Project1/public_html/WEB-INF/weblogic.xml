@@ -14,11 +14,11 @@
 	<!-- For DataSource plan-->
 	<resource-description>
 		<res-ref-name>myDataSource</res-ref-name>
-		<jndi-name>jdbc/ClubProRetailUtilAZAZ</jndi-name>
+		<jndi-name>jdbc/CAZAZ</jndi-name>
 	</resource-description>
 	<!-- For FILE Datasource -->
 	<resource-description>
 		<res-ref-name>myMarsDataSource</res-ref-name>
-		<jndi-name>jdbc.mars-gate-api</jndi-name>
+		<jndi-name>jdbc.azazazi</jndi-name>
 	</resource-description>
 </weblogic-web-app>

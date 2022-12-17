@@ -39,21 +39,21 @@
         </FORM>
         <FORM NAME="data" METHOD="POST" Action="/testapp-all/stuck">
             </p>
-            Test Insert Datasource Name: <INPUT TYPE="TEXT" NAME="nameDataSource" VALUE="jdbc/oradmnDS"><br/>
+            Test Insert (NSERT INTO testins (id,text) VALUES (1,"lalal")) Datasource Name: <INPUT TYPE="TEXT" NAME="nameDataSource" VALUE="jdbc/oradmnDS"><br/>
             </p>
             <INPUT TYPE="SUBMIT" NAME="insertTestTable" VALUE="insert">
             </p>
         </FORM>        
         <FORM NAME="data" METHOD="POST" Action="/testapp-all/stuck">
             </p>
-            executeProc Datasource Name: <INPUT TYPE="TEXT" NAME="nameDataSource" VALUE="jdbc/oradmnDS"><br/>
+            executeProc (CALL testproc1(1,1)) Datasource Name: <INPUT TYPE="TEXT" NAME="nameDataSource" VALUE="jdbc/oradmnDS"><br/>
             </p>
             <INPUT TYPE="SUBMIT" NAME="executeProc" VALUE="insert">
             </p>
         </FORM>    
         <FORM NAME="data" METHOD="POST" Action="/testapp-all/stuck">
             </p>
-            executeProcWithReturn Datasource Name: <INPUT TYPE="TEXT" NAME="nameDataSource" VALUE="jdbc/sed_repositoryDS"><br/>
+            executeProcWithReturn (CALL ? := sm_mdm.GET_CD_ID_BY_MDM_ID(1782400299)) Datasource Name: <INPUT TYPE="TEXT" NAME="nameDataSource" VALUE="jdbc/sed_repositoryDS"><br/>
             </p>
             <INPUT TYPE="SUBMIT" NAME="executeProcWithReturn" VALUE="insert">
             </p>
@@ -91,6 +91,13 @@
             Write to File path: <INPUT TYPE="TEXT" NAME="pathtofile" VALUE="/tmp/azazaz.txt"><br/>
             </p>
             <INPUT TYPE="SUBMIT" NAME="writeToFile" VALUE="submit">
+            </p>
+        </FORM>
+        <FORM NAME="data" METHOD="POST" Action="/testapp-all/stuck">
+            </p>
+            !Get Request Headers!
+            </p>
+            <INPUT TYPE="SUBMIT" NAME="outHeaders" VALUE="submit">
             </p>
         </FORM>
 	</br>

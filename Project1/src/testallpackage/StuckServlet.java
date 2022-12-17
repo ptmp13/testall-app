@@ -119,9 +119,9 @@ public class StuckServlet extends HttpServlet {
         try {
             ctx = new InitialContext();
             // FOR DATASOURCE FROM WEBLOGIC.XML
-            DataSource ds = (DataSource) ctx.lookup("java:comp/env/myMarsDataSource");
+            // DataSource ds = (DataSource) ctx.lookup("java:comp/env/myMarsDataSource");
             // FOR VARIABLES (JNDI NAME)
-            //DataSource ds = (DataSource) ctx.lookup(dsName);
+            DataSource ds = (DataSource) ctx.lookup(dsName);
 
             con = ds.getConnection();
             stmt = con.createStatement();
@@ -390,6 +390,12 @@ public class StuckServlet extends HttpServlet {
         out.println("End sleep!....");
     }
 
+    protected void outHeaders(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        PrintWriter out = response.getWriter();
+        String ResponseHeader = request.getHeader("ROUTE");
+        out.println(ResponseHeader);
+    }
+
     // Print float
     protected void testlocale(HttpServletRequest request, HttpServletResponse response) throws Exception {
         DecimalFormat format = new DecimalFormat();
@@ -591,7 +597,15 @@ public class StuckServlet extends HttpServlet {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        }        
+        }
+        if (request.getParameter("outHeaders") != null) {
+            System.out.println("doPost outHeaders IF");
+            try {
+                outHeaders(request, response);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
 	/* else if (request.getParameter("button3") != null) {
             myClass.method3();
         } else {
